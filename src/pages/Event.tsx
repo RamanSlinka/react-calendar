@@ -27,10 +27,12 @@ const Event: FC = () => {
 
             <EventCalendar events={events}/>
             <Row justify="center">
-                <Button
+
+                <Button type="primary"
                     onClick={() => setModalVisible(true)}
                 >Add event</Button>
             </Row>
+
             <Modal
                 title="Add event"
                 visible={modalVisible}
